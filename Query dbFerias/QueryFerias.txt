@@ -1,0 +1,27 @@
+CREATE DATABASE EmpresaFeriaBD
+USE EmpresaFeriaBD
+CREATE TABLE employee(
+	id int PRIMARY KEY NOT NULL,
+	full_name varchar(60),
+	username varchar(60),
+	password varchar(60),
+	address varchar(60),
+	telephone varchar(20),
+	email varchar(255),
+	rol varchar(20),
+	created datetime,
+	updated datetime
+);
+CREATE TABLE feria(
+	id int PRIMARY KEY NOT NULL,
+	name varchar(60),
+	address varchar(60),
+    category varchar(60),
+    estado varchar(50),
+    organizador varchar(60),
+	telephone varchar(20),
+	email varchar(255),
+	rol varchar(20),
+	inicio datetime,
+	fin datetime
+);
